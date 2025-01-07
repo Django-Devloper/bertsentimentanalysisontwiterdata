@@ -1,3 +1,5 @@
 venv*
 .idea
 bert-base-case-uncased-sentiment-model/model.safetensors
+..bfg-report*
+bfg-1.14.0.jar
