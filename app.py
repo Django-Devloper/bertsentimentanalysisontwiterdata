@@ -1,12 +1,5 @@
 import streamlit as st
-from transformers import AutoTokenizer, AutoModelForSequenceClassification , pipeline
-
-@st.cache_resource  # Caches the model to avoid reloading on every app refresh
-def load_model():
-    tokenizer = AutoTokenizer.from_pretrained("bert-base-case-uncased-sentiment-model")
-    model = AutoModelForSequenceClassification.from_pretrained("bert-base-case-uncased-sentiment-model")
-    return tokenizer, model
-tokenizer, model = load_model()
+from transformers import  pipeline
 
 # Streamlit app layout
 st.title("Sentiment Analysis with BERT")
